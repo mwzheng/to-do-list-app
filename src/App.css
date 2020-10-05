@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+body {
+    background-color: black;
+    color: rgb(57, 183, 212);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+    text-align: center;
+    font-size: 250%;
+    margin-bottom: .5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form {
+    text-align: center;
+    padding-left: auto;
+    padding-right: auto;
+    font-size: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input {
+    height: 3%;
+    padding: .5%;
+    width: 16%;
 }
 
-.App-link {
-  color: #61dafb;
+.todo {
+    text-align: left;
+    font-size: 1.5em;
+    margin-left: auto;
+    margin-right: auto;    
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-style: dotted;
+    padding-right: 3px;
+    border-radius: 12px;
+    width: 25%;
+    padding: 1%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+    float: right;
+    width: 35px;
+    height: 35px;
+    border-radius: 13px;
+    text-align: center;
+    margin-top: -1%;
+}
+
+#submit {
+    float: none;
+    width: 30px;
+    height: 30px;
+}
+
+*:focus {
+    outline: none;
+}
+
+button:active {
+    /* transition: */
+}
+
+button:hover {
+    background-color: rgb(25, 147, 168);
+}
+
+.addButton {
+
+}
+
+.deleteButton {
+
+}
+
+#listContainer {
+    /* border-style: dashed; */
 }
