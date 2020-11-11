@@ -22,18 +22,19 @@ input {
     width: 16%;
 }
 
-.todo {
+.todo, .complete {
     text-align: left;
     font-size: 1.5em;
-    margin-left: auto;
-    margin-right: auto;    
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin: 1% auto;
     border-style: dotted;
     padding-right: 3px;
     border-radius: 12px;
     width: 25%;
     padding: 1%;
+}
+
+.complete {
+    background-color: rgb(83, 83, 195);
 }
 
 button {
@@ -55,22 +56,6 @@ button {
     outline: none;
 }
 
-button:active {
-    /* transition: */
-}
-
 button:hover {
     background-color: rgb(25, 147, 168);
-}
-
-.addButton {
-
-}
-
-.deleteButton {
-
-}
-
-#listContainer {
-    /* border-style: dashed; */
 }

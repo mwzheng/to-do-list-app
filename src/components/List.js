@@ -1,16 +1,17 @@
 import React from 'react'
 
-import Form from './Form'
+// Import component
 import Todo from './Todo'
 
-const List = () => {
+// Creates the list of todos 
+const List = ({ todos, setTodos }) => {
     return (
         <div>
-            <Form />
             <div id='listContainer'>
-                < Todo />
-                < Todo />
-                < Todo />
+                {/* For each todo create a todo component */}
+                {todos.map((todo =>
+                    <Todo todos={todos} className={todo.className} id={todo.id} text={todo.text} key={todo.id} setTodos={setTodos} />
+                ))}
             </div>
         </div>
     );
