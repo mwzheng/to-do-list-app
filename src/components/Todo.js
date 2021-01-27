@@ -11,7 +11,7 @@ const Todo = ({ className, todos, id, text, setTodos }) => {
         const newTodo = todos.slice();
 
         newTodo.forEach(element => {
-            if (element.id == id) {
+            if (element.id === id) {
                 if (element.className !== 'complete') {
                     element.className = "complete";
                     element.complete = true;
